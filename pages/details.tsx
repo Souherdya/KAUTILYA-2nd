@@ -1,13 +1,9 @@
-import React, {useState,useRef} from 'react'
+import React, {useState} from 'react'
 import { useEffect } from 'react';
-import { useParams } from 'next/navigation'
-import { Button } from '@/components/ui/button';
 import { useRouter } from "next/navigation";
 
-export default function details() {
-    
-    // const params = useParams();
-    // const {id} = params;
+
+export default function Details() {
     const [details,setdetails] = useState();
     const [loading, setLoading] = useState(true);
     const router = useRouter();
