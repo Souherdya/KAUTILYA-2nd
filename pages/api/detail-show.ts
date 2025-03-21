@@ -31,7 +31,7 @@ interface AllocationItem {
   }
 
 
-  const detailedOptions = async(allocation) => {
+  const detailedOptions = async(allocation : any) => {
     const prompt = `Act as an expert Indian financial advisor and generate a detailed investment portfolio allocation plan. 
 Return ONLY a JSON object (no other text) with the following structure: 
     
