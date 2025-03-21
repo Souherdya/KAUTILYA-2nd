@@ -31,7 +31,7 @@ interface AllocationItem {
   }
 
 
-  const detailedOptions = async(allocation : any[]) : any[] => {
+  const detailedOptions = async(allocation : (any|string)[]) => {
     const prompt = `Act as an expert Indian financial advisor and generate a detailed investment portfolio allocation plan. 
 Return ONLY a JSON object (no other text) with the following structure: 
     
@@ -47,8 +47,6 @@ Return ONLY a JSON object (no other text) with the following structure:
     return parsedResponse;
 
   }
-
-
 export default async function DetShow(req: NextApiRequest,
     res: NextApiResponse<GetDetails | { error: string; details?: string }>
 ){
