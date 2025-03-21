@@ -47,7 +47,7 @@ export default function Details() {
         }
       }, []);
 
-      const handleAdvancedAnalysis = (category: string,items : any[]) => {
+      const handleAdvancedAnalysis = (category: string,items) => {
         if (Array.isArray(items)) {
           localStorage.setItem("Category",category);
           localStorage.setItem("selectedItems", JSON.stringify(items)); // Store items array
